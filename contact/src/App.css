@@ -10,10 +10,11 @@
   border-width: 1px;
   border-color: #DFE2E5;
   box-sizing: border-box;
-  width: 30%;
+  width: 35%;
   margin-left: 30%;
-  height: 120%;
+  height: 130%;
   overflow-y: auto;
+  text-transform: capitalize;
 }
 
 .view {
@@ -28,7 +29,7 @@
   padding: 18px;
   background-color: #80BC39;
   width: 86%;
-  margin-left: 12px;
+  margin-left: 10px;
   margin-top: 4px;
   color: white;
   font-weight: 900;
@@ -41,14 +42,27 @@
 }
 
 .name {
-  padding: 15px;
-  width: 86%;
-  margin-left: 17px;
+  padding: 6px;
+  width: 91%;
+  margin-left: 12px;
   text-align: left;
   border-bottom-style: solid;
   border-bottom-width: thin;
   border-color: #DFE2E5;
-  font-weight: bold;
+  display: flex;
+  font-weight: 700;
+}
+
+.name2 {
+  padding: 6px;
+  width: 91%;
+  margin-left: 7px;
+  text-align: left;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: #DFE2E5;
+  display: flex;
+  font-weight: 700;
 }
 
 .title2 {
@@ -56,7 +70,7 @@
   height: 190px;
   background-color: #A7D076;
   width: 85%;
-  margin-left: 15px;
+  margin-left: 11px;
   margin-top: 4px;
   color: white;
   font-weight: 900;
@@ -68,7 +82,68 @@
 .name2 {
   padding: 15px;
   width: 85%;
-  margin-left: 17px;
+  margin-left: 7px;
   text-align: left;
   font-weight: bold;
+}
+
+.location {
+  padding: 15px;
+  width: 86%;
+  margin-left: 7px;
+  text-align: left;
+  border-color: #dfe2e5;
+  font-weight: 700;
+  display: flex;
+}
+
+.email {
+  padding: 15px;
+  width: 86%;
+  margin-left: 7px;
+  text-align: left;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: #DFE2E5;
+  text-transform: lowercase;
+  font-weight: 700;
+  display: flex;
+}
+
+:link {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+:visited {
+  color: black;
+}
+
+.largeImage {
+  border-radius: 50%;
+  margin: 7% 29%;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  width: 12%;
+}
+
+.nameLink {
+  margin-top: 14px;
+
+}
+
+.title2 button {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 21px;
+  left: 32%;
+}
+
+.info {
+  margin-left: 10px;
 }

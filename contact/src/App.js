@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-import phonebook from './contacts.json'
-// import singleView from 'singleview.js'
+import Singleview from './Singleview.js'
+import Listview from './Listview.js'
 
 function App() {
-  const [contacts, setContact] = useState(phonebook)
+  
   return (
     <div className="App">
-      <Router>
-        <Route path
-      </Router>
+      <div className="phonebook">
+        <Router>
+          <Route path="/" exact component={Listview} />
+          <Route path="/contacts/:id" component={Singleview} />
+        </Router>
+      </div>
     </div>
     
   );
