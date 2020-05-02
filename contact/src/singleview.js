@@ -8,8 +8,8 @@ import { GiEarthAmerica } from 'react-icons/gi'
 export default function Singleview(props) {
     const [contact, setContact] = useState({ name: {}, location: {}, picture: {} })
     useEffect(() => {
-        const id = props.match.params.id
-        const user = Phonebook.find(item => id == item.id)
+        const id = Number(props.match.params.id)
+        const user = Phonebook.find(item => id === item.id)
         setContact(user)
     }, [props.match.params.id])
 
